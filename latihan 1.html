@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+    <style>
+        /* Gaya untuk body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(145deg,#00284c 0%,  #a0e8c5 150%);
+            display: flex;
+            justify-content: center;
+            background-size: 100%;
+            height: 100vh;
+            flex-direction: column;
+            color: #E5E5E5; /* Warna teks umum */
+        }
+
+        /* Gaya untuk heading */
+        h1 {
+            font-family: 'Impact', sans-serif;
+            font-size: 60px;
+            color: #00284c; /* Warna merah dari palet */
+            text-align: center;
+            letter-spacing: 5px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Gaya untuk paragraf */
+        p {
+            text-align: center;
+            font-size: 24px;
+            color: #a0e8c5; /* Warna ungu tua dari palet */
+            margin-top: 20px;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        /* Efek animasi fadeIn */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Efek animasi slideIn */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Shadow untuk teks */
+        h1, p {
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hover efek untuk heading */
+        h1:hover {
+            color: #162C4C; /* Warna biru tua saat hover */
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <p>Selamat Datang</p>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5</title>
+    <style>
+body { background-color: #00284c; /* Warna merah dari palet */
+    ;}
+
+/* Gaya untuk form */
+form {
+    background-color: #fff;
+    padding: 30px; /* reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #a0e8c5;
+    max-width: 500px; /* reduced max-width */
+    width: 100%;
+    margin: auto;
+    border: 1px solid #a0e8c5; /* added subtle border */
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid #ddd; /* added subtle border */
+}
+h1 {text-align: center; color: #00284c;}
+
+tr {
+    margin-bottom: 15px; /* reduced margin-bottom */
+}
+
+th, td {
+    padding: 10px; /* reduced padding */
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd; /* added subtle border */
+}
+
+/* Gaya untuk input dan select */
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 10px; /* reduced padding */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem; /* reduced font size */
+    transition: all 0.3s ease;
+    background-color: #f9f9f9; /* added subtle background color */
+}
+
+/* Gaya hover untuk input */
+input[type="text"]:hover, input[type="date"]:hover, select:hover {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* added subtle hover effect */
+}
+
+/* Gaya fokus untuk input */
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    th, td, input[type="text"], input[type="date"], select {
+        width: 100%;
+    }
+}
+
+/* Additional media queries for better responsiveness */
+@media (max-width: 400px) {
+    form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 300px) {
+    form {
+        width: 70%;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <h1>Personal Data Form</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>:</th>
+                <th><input type="text" name="name"></th>
+            </tr>
+
+            <tr>
+                <th>Nationality</th>
+                <th>:</th>
+                <th><input type="text" name="Nationality"><br></th>
+            </tr>
+
+            <tr>
+                <th>Birthplace</th>
+                <th>:</th>
+                <th><input type="text" name="Birthplace"><br></th>
+            </tr>
+            
+            <tr>
+                <th>Birthdate</th>
+                <th>:</th>
+                <th><input type="date" name="Birthdate"><br></th>
+            </tr>
+            
+            <tr>
+                <th>Instagram</th>
+                <th>:</th>
+                <th><input type="text" name="ig"><br></th>
+            </tr>
+            
+            <tr>
+                <th>gender</th>
+                <th>:</th>
+                <th>
+                    <input type="radio" name="jk" value="Male">Male <br>
+                    <input type="radio" name="jk" value="Female">Female 
+                </th>
+            </tr>
+            
+            <tr>
+                <th>Hobby</th>
+                <th>:</th>
+                <th><input type="checkbox" name="Hobby" value="play a musical instrument">Playing instrument <br>
+                    <input type="checkbox" name="Hobby" value="play basketball">Playing basketball <br>
+                    <input type="checkbox" name="Hobby" value="Main Game">Playing Games <br>
+                    <input type="checkbox" name="Hobby" value="Cooking">Cooking<br>
+                    <input type="checkbox" name="Hobby" value="Sleeping">Sleeping</th>
+            </tr>
+            
+            <tr>
+                <th>Sub-unit</th>
+                <th>:</th>
+                <th><select name="Sub-unit">
+                    <option value="Hip-Hop">Hip-Hop Team</option> <br>
+                    <option value="Performance">Performance Team</option> <br>
+                    <option value="Vocal">Vocal Team</option> <br>
+                </select>
+            </tr>
+            
+    </form>
+</body>
+</html>
